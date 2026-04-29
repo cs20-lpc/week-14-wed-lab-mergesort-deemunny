@@ -16,28 +16,28 @@ void merge(int arr[], int left, int mid, int right)
     for (int r = 0; r < rightSize; ++r) arrRight[r] = arr[mid + 1 + r];
     // Merge sorted halves back into arr
 
-    int i = 0, j = 0, k = left;
-    while (i < leftSize && j < rightSize) {
-        if (arrLeft[i] <= arrRight[j]) {
-            arr[k] = arrLeft[i];
-            ++i;
+    int leftIndex = 0, rightIndex = 0, og = left;
+    while (leftIndex < leftSize && rightIndex < rightSize) {
+        if (arrLeft[leftIndex] <= arrRight[rightIndex]) {
+            arr[og] = arrLeft[leftIndex];
+            ++leftIndex;
         } else {
-            arr[k] = arrRight[j]; 
-            ++j;
+            arr[og] = arrRight[rightIndex]; 
+            ++rightIndex;
         }
-        ++k;
+        ++og;
     }
 
-    while (i < leftSize) {
-        arr[k] = arrLeft[i];
-        ++i;
-        ++k;        
+    while (leftIndex < leftSize) {
+        arr[og] = arrLeft[leftIndex];
+        ++leftIndex;
+        ++og;        
     }
 
-    while (j < rightSize) {
-        arr[k] = arrRight[i];
-        ++j;
-        ++k;
+    while (rightIndex < rightSize) {
+        arr[og] = arrRight[rightIndex];
+        ++rightIndex;
+        ++og;
     }
 
     delete[] arrLeft;

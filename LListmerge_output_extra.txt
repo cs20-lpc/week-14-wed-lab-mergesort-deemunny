@@ -1,0 +1,126 @@
+$ ./linkedlistmerge.exe
+Before Sorting: 38 27 43 3 9 82 10 5 61 14
+mergesort: 38 27 43 3 9
+mergesort: 82 10 5 61 14
+
+mergesort: 38 27
+mergesort: 43 3 9
+
+mergesort: 38
+mergesort: 27
+
+merge :38
+merge :27
+
+merge :38
+merge :
+
+mergesort: 43
+mergesort: 3 9
+
+mergesort: 3
+mergesort: 9
+
+merge :3
+merge :9
+
+merge :
+merge :9
+
+merge :43
+merge :3 9
+
+merge :43
+merge :9
+
+merge :43
+merge :
+
+merge :27 38
+merge :3 9 43
+
+merge :27 38
+merge :9 43
+
+merge :27 38
+merge :43
+
+merge :38
+merge :43
+
+merge :
+merge :43
+
+mergesort: 82 10
+mergesort: 5 61 14
+
+mergesort: 82
+mergesort: 10
+
+merge :82
+merge :10
+
+merge :82
+merge :
+
+mergesort: 5
+mergesort: 61 14
+
+mergesort: 61
+mergesort: 14
+
+merge :61
+merge :14
+
+merge :61
+merge :
+
+merge :5
+merge :14 61
+
+merge :
+merge :14 61
+
+merge :10 82
+merge :5 14 61
+
+merge :10 82
+merge :14 61
+
+merge :82
+merge :14 61
+
+merge :82
+merge :61
+
+merge :82
+merge :
+
+merge :3 9 27 38 43
+merge :5 10 14 61 82
+
+merge :9 27 38 43
+merge :5 10 14 61 82
+
+merge :9 27 38 43
+merge :10 14 61 82
+
+merge :27 38 43
+merge :10 14 61 82
+
+merge :27 38 43
+merge :14 61 82
+
+merge :27 38 43
+merge :61 82
+
+merge :38 43
+merge :61 82
+
+merge :43
+merge :61 82
+
+merge :
+merge :61 82
+
+After Sorting: 3 5 9 10 14 27 38 43 61 82
